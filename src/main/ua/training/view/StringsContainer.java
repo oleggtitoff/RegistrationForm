@@ -1,8 +1,10 @@
 package ua.training.view;
 
 public interface StringsContainer {
-    String EQUAL_SING = "=";
-    String SPACE_SING = " ";
+    String SPACE_SIGN = " ";
+    String DOT_SIGN = ".";
+    String COMMA_SIGN = ",";
+
     String WRONG_INPUT_MESSAGE = "Введено хибні дані! Спробуйте ще раз ";
     String MESSAGE_OF_THANKS = "Дякуємо, дані збережено. ";
 
