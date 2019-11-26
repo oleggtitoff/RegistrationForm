@@ -13,7 +13,9 @@ public class Controller {
     }
 
     public void processUser() {
+        InputToNotebook inputToNotebook = new InputToNotebook(view);
 
+        inputToNotebook.inputForm();
     }
 
 }

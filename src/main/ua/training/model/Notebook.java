@@ -1,23 +1,24 @@
 package ua.training.model;
 
 public class Notebook {
-    String name;
-    String surname;
-    String patronymic;
-    String fullNameShortForm;
-    String nickname;
-    String comment;
-    String group;
+    public String name;
+    public String surname;
+    public String patronymic;
+    public String fullNameShortForm;
+    public String nickname;
+    public String comment;
+    public String group;
 
-    String homePhone;
-    String mobilePhone1;
-    String mobilePhone2;
-    String email;
-    String skype;
+    public String homePhone;
+    public String mobilePhone;
+    public String optionalMobilePhone;
+    public String email;
+    public String skype;
 
-    String postIndex;
-    String city;
-    String street;
-    String houseNumber;
-    String apartmentNumber;
+    public String postIndex;
+    public String city;
+    public String street;
+    public String houseNumber;
+    public String apartmentNumber;
+    public String fullAddress;
 }
