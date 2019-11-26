@@ -21,4 +21,6 @@ public class Notebook {
     public String houseNumber;
     public String apartmentNumber;
     public String fullAddress;
+
+    public String timestamp;
 }

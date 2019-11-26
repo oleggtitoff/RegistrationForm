@@ -3,6 +3,7 @@ package ua.training.controller;
 import ua.training.view.StringsContainer;
 import ua.training.view.View;
 
+import java.sql.Timestamp;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
@@ -58,6 +59,10 @@ class UtilityController {
         Pattern pattern = Pattern.compile(regex);
 
         return pattern.matcher(message).matches();
+    }
+
+    String getTimestampInString() {
+        return new Timestamp(System.currentTimeMillis()).toString();
     }
 
 }

@@ -27,6 +27,7 @@ class InputToNotebook {
         inputAdress();
         setFullAddress();
         printMessageOfThanks();
+        setTimestamp();
         printAllForm();
         return note;
     }
@@ -157,6 +158,10 @@ class InputToNotebook {
                 StringsContainer.DOT_SIGN);
     }
 
+    private void setTimestamp() {
+        note.timestamp = utilController.getTimestampInString();
+    }
+
     private void printMessageOfThanks() {
         view.printLine(StringsContainer.MESSAGE_OF_THANKS);
     }
@@ -182,6 +187,8 @@ class InputToNotebook {
         view.printLine(note.houseNumber);
         view.printLine(note.apartmentNumber);
         view.printLine(note.fullAddress);
+
+        view.printLine(note.timestamp);
     }
 
 }
