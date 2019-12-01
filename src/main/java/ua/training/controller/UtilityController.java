@@ -45,11 +45,11 @@ class UtilityController {
     String inputStringWithScannerByRegex(String message, String regex) {
         String inputString;
 
-        view.printLine(message);
+        view.printBundleLine(message);
         inputString = scanner.nextLine();
         while (!matchStringToRegex(inputString, regex)) {
-            view.printLine(StringsContainer.WRONG_INPUT_MESSAGE);
-            view.printLine(message);
+            view.printBundleLine(StringsContainer.WRONG_INPUT_MESSAGE);
+            view.printBundleLine(message);
             inputString = scanner.nextLine();
         }
         return inputString;

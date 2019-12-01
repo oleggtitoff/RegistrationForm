@@ -163,7 +163,7 @@ class InputToNotebook {
     }
 
     private void printMessageOfThanks() {
-        view.printLine(StringsContainer.MESSAGE_OF_THANKS);
+        view.printBundleLine(StringsContainer.MESSAGE_OF_THANKS);
     }
 
     private void printAllForm() {
