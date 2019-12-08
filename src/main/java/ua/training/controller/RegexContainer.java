@@ -2,7 +2,7 @@ package ua.training.controller;
 
 interface RegexContainer {
     String NAME_REGEX = "^([A-Za-z]{1,20})|([А-ЩЬЮЯҐЄІЇа-щьюяґєії']{1,20})$";
-    String NICKNAME_REGEX = "^[A-Za-z_-]{8,20}$";
+    String NICKNAME_REGEX = "^[A-Za-z0-9_-]{8,20}$";
     String COMMENT_REGEX = "^[A-Za-zА-ЩЬЮЯҐЄІЇа-щьюяґєії'0-9 ]{0,300}$";
     String PHONE_REGEX = "^[0-9]{10}$";
     String OPTIONAL_PHONE_REGEX = "^([0-9]{10})?$";

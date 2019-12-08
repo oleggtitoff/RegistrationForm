@@ -6,9 +6,9 @@ import java.util.ResourceBundle;
 public class View {
     private static final String MESSAGES_BUNDLE_NAME = "messages";
     // English
-    //public static final Locale locale = new Locale("en", "US");
+    private static final Locale locale = new Locale("en", "US");
     // Ukrainian
-    private static final Locale locale = new Locale("ua", "UA");
+    //private static final Locale locale = new Locale("uk", "UA");
     private static final ResourceBundle bundle = ResourceBundle.getBundle(
             MESSAGES_BUNDLE_NAME, locale);
 
