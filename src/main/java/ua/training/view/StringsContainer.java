@@ -9,6 +9,7 @@ public interface StringsContainer {
     String DOLLAR_SIGN = "$";
 
     String WRONG_INPUT_MESSAGE = "input.wrong.message";
+    String NICKNAME_EXISTS_MESSAGE = "input.nickname.exists.message";
     String MESSAGE_OF_THANKS = "input.thanks.message";
 
     String NAME_PROMPT = "input.name.prompt";

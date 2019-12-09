@@ -26,9 +26,12 @@ class InputToNotebook {
         inputSkype();
         inputAdress();
         setFullAddress();
-        printMessageOfThanks();
         setTimestamp();
-        printAllForm();
+        return note;
+    }
+
+    Notebook inputNewNickname(Notebook note) {
+        note.nickname = getInputNickname();
         return note;
     }
 
@@ -62,7 +65,11 @@ class InputToNotebook {
     }
 
     private void inputNickname() {
-        note.nickname = utilController.inputStringWithScannerByRegex(
+        note.nickname = getInputNickname();
+    }
+
+    private String getInputNickname() {
+        return utilController.inputStringWithScannerByRegex(
                 StringsContainer.NICKNAME_PROMPT,
                 RegexContainer.NICKNAME_REGEX);
     }
@@ -75,7 +82,7 @@ class InputToNotebook {
     private void inputGroup() {
         note.group = utilController.inputStringWithScannerByRegex(
                 StringsContainer.GROUP_PROMPT,
-                utilController.getRegexFromEnum(RegexContainer.groups.values()));
+                utilController.getRegexFromEnum(Groups.values()));
     }
 
     private void inputPhoneNumbers() {
@@ -162,11 +169,11 @@ class InputToNotebook {
         note.timestamp = utilController.getTimestampInString();
     }
 
-    private void printMessageOfThanks() {
+    void printMessageOfThanks() {
         view.printBundleLine(StringsContainer.MESSAGE_OF_THANKS);
     }
 
-    private void printAllForm() {
+    void printAllForm() {
         view.printLine(note.name);
         view.printLine(note.surname);
         view.printLine(note.patronymic);

@@ -12,7 +12,7 @@ public class Model {
 
     private void checkNickname(Notebook note) throws NicknameExistsException {
         for (SavedNicknames nicknames : SavedNicknames.values()) {
-            if (nicknames.name().equals(note.nickname)) {
+            if (nicknames.nickname().equals(note.nickname)) {
                 throw new NicknameExistsException(note);
             }
         }

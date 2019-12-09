@@ -16,12 +16,12 @@ class UtilityController {
         scanner = new Scanner(System.in);
     }
 
-    String getRegexFromEnum(RegexContainer.groups[] groups) {
+    String getRegexFromEnum(Groups[] groups) {
         StringBuilder regex = new StringBuilder();
 
         regex.append(StringsContainer.CARET_SIGN);
-        for (RegexContainer.groups group : RegexContainer.groups.values()) {
-            regex.append(group);
+        for (Groups group : groups) {
+            regex.append(group.groupName());
             regex.append(StringsContainer.VERTICAL_BAR_SYMBOL);
         }
         regex.setLength(regex.length() - 1);
